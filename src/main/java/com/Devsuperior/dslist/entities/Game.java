@@ -22,7 +22,6 @@ public class Game {
 		private Integer year;
 		private String genre;
 		private String platforms;
-		private Double score;
 		private String imageUrl;
 		private String shortDescription;
 		private String longDescription;
@@ -37,7 +36,6 @@ public class Game {
 			this.year = year;
 			this.genre = genre;
 			this.platforms = platforms;
-			this.score = score;
 			this.imageUrl = imageUrl;
 			this.shortDescription = shortDescription;
 			this.longDescription = longDescription;
@@ -81,14 +79,6 @@ public class Game {
 
 		public void setPlatforms(String platforms) {
 			this.platforms = platforms;
-		}
-
-		public Double getScore() {
-			return score;
-		}
-
-		public void setScore(Double score) {
-			this.score = score;
 		}
 
 		public String getImageUrl() {
