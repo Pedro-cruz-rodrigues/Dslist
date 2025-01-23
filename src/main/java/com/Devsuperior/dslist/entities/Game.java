@@ -18,14 +18,15 @@ public class Game {
 		private Long id;
 		private String title;
 		
+		@Column(name = "game_year")
+		private Integer year;
 		private String genre;
 		private String platforms;
 		private String imageUrl;
 		private String shortDescription;
 		private String longDescription;
 		
-		@Column(name = "Game_year")
-		private Integer year;
+	
 		
 		public Game() {
 		}
