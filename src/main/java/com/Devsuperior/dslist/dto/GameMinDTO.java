@@ -21,8 +21,6 @@ public class GameMinDTO {
 		imgUrl = entity.getImageUrl();
 		shortDescription = entity.getShortDescription();
 	}
-
-	
 	
 
 	public Long getId() {
