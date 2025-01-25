@@ -15,8 +15,12 @@ public class GameService {
 	@Autowired
 	private GameRepository gameRepository;
 
-		public List<Game> findAll() {
+		public List<GameMinDTO> findAll() {
 			List<Game> result = gameRepository.findAll();
-			return result;
+			return result.stream().map(x -> new GameMinDTO(x)).toList();
 		}
+		
+	// IMPLEMENTAÇÃO DAS REGRAS DE NEGOCIO
+	// INSTACIANDO UMA LIST, PEGANDO TODOS OS GAMES DO REPOSITORY E RETORNANDO 
+	// O RESULTADO JA REQUISITADO TRANSFORMADO NA NOVA LISTA DE INFORMACOES DESEJADAS 
 }

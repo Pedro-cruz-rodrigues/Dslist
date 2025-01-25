@@ -1,5 +1,8 @@
 package com.Devsuperior.dslist.entities;
 
+//LEITURA E SEPARAÇÃO  DE DADOS TRAZIDOS PELO jpa.LIBRARY
+// INSTANCIADOS OBJETOS E DEFIDOS PARAMETROS DO CONSOLE WEB
+
 import java.util.Objects;
 
 import jakarta.persistence.Column;
@@ -9,6 +12,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+// ARROBAS PARA MAPEAMENTO RELACIONAL
 @Entity
 @Table(name = "tb_game")
 public class Game {

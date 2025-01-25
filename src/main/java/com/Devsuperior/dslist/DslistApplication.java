@@ -10,4 +10,5 @@ public class DslistApplication {
 		SpringApplication.run(DslistApplication.class, args);
 	}
 
+	//IMPORTALÇÃO DE APPLICACAO PARA SINCRONIZAR ATRIBUTOS
 }

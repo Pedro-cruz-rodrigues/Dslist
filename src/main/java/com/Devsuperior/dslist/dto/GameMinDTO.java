@@ -1,5 +1,7 @@
 package com.Devsuperior.dslist.dto;
 
+//SERAPAÇAO DE DADOS REQUERIDOS E DOS NAO DESEJADOS
+
 import com.Devsuperior.dslist.entities.Game;
 
 public class GameMinDTO {
@@ -13,6 +15,8 @@ public class GameMinDTO {
 	public GameMinDTO() {
 	}
 
+	//REQUISITANDO DADOS DO BANCO E INSERINDO NO dto DE INFO DESEJADAS
+	
 	
 	public GameMinDTO(Game entity) {
 		id = entity.getId();
