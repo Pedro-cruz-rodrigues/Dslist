@@ -8,72 +8,61 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
 @Entity
 @Table(name = "tb_game_list")
 public class GameList {
 //MAPEAMENTO PRA TABELA RELACIONAL ARROBAS NECESSARIOS
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-		private Long id;
-		private String name;
-		
+	private Long id;
+	private String name;
+
 // INSTANCIAR CONSTRUTOR VAZIO, SEM PARAMETROS
-		
-		public GameList() {
-			
-		}
+
+	public GameList() {
+
+	}
 // INSTANCIAR GETTERS E SETTTERS PRA MANEJO DE INFORMACOES
-		
-		
-public GameList(Long id, String name) {
-	this.id = id;
-	this.name = name;
-}
 
-public Long getId() {
-	return id;
-}
+	public GameList(Long id, String name) {
+		this.id = id;
+		this.name = name;
+	}
 
-public void setId(Long id) {
-	this.id = id;
-}
+	public Long getId() {
+		return id;
+	}
 
-public String getName() {
-	return name;
-}
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-public void setName(String name) {
-	this.name = name;
-}
+	public String getName() {
+		return name;
+	}
 
-@Override
-public int hashCode() {
-	return Objects.hash(id);
-}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
 
 // INSTANCIAR HASHCODE PRA FAZER COMPARACAO, SOMENTE ID NECESSARIO
 
-@Override
-public boolean equals(Object obj) {
-	if (this == obj)
-		return true;
-	if (obj == null)
-		return false;
-	if (getClass() != obj.getClass())
-		return false;
-	GameList other = (GameList) obj;
-	return Objects.equals(id, other.id);
-}
-		
-	
-	
-	
-	
-	
-	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		GameList other = (GameList) obj;
+		return Objects.equals(id, other.id);
+	}
 
 }
-
-
