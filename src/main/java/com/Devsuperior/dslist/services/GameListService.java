@@ -16,7 +16,7 @@ public class GameListService {
 	@Autowired
 	private GameListRepository gameListRepository;
 
-//CRIACAO DE METODO DE BUSCA POR LISTAS
+//CRIACAO DE METODO DE BUSCAR TODAS LISTAS DE JOGOS, SEPARANDO-AS
 
 	@Transactional(readOnly = true)
 	public List<GameListDTO> findAll() {

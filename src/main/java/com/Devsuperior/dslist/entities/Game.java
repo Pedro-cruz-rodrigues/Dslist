@@ -35,9 +35,13 @@ public class Game {
 	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 
+//CONSTRUTO SEMPARAMETROS
+	
 	public Game() {
 	}
 
+//PARAMENTROS A SEREM USADOS PARA ORGANIZAR DADOS RECEBIDOS E INSERIR NO CONSTRITOR
+	
 	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
 			String shortDescription, String longDescription) {
 		this.id = id;
@@ -99,11 +103,11 @@ public class Game {
 		this.score = score;
 	}
 
-	public String getImageUrl() {
+	public String getImgUrl() {
 		return imgUrl;
 	}
 
-	public void setImageUrl(String imageUrl) {
+	public void setImgUrl(String imageUrl) {
 		this.imgUrl = imageUrl;
 	}
 
@@ -123,6 +127,8 @@ public class Game {
 		this.longDescription = longDescription;
 	}
 
+//HASHCODE DE COMPARACAO PARA ORGANIZACAO SEQUENCIAL DE ID
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
